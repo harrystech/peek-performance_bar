@@ -106,7 +106,7 @@ module Rack
     # signal when a response is fully finished processing.
     class Body
       def initialize(body, &block)
-        @body = body
+        @body = body || []
         @block = block
       end
 
